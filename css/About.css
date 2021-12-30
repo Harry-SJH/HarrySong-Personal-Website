@@ -1,0 +1,219 @@
+@import url(https://hello.myfonts.net/count/3ada1c);
+@font-face {
+	font-family:RecoletaAlt-Bold;src:url(https://hello.myfonts.net/count/3ada1c/6f30fd11d17df49ade4ee68148797132aabf07e6/d7315/webfonts/3ada1c_5_0.eot);src:url(https://hello.myfonts.net/count/3ada1c/6f30fd11d17df49ade4ee68148797132aabf07e6/d7315/webfonts/3ada1c_5_0.eot#iefix) format("embedded-opentype"),url(https://hello.myfonts.net/count/3ada1c/b72c93cf5db458ce0cd47f6a89414d7808634079/a03eb/webfonts/3ada1c_5_0.woff2) format("woff2"),url(https://hello.myfonts.net/count/3ada1c/0e1f13945e9eaac19564943de825a5109fcb23f8/e16c7/webfonts/3ada1c_5_0.woff) format("woff")
+}
+
+@font-face {
+	font-family:RecoletaAlt-Regular;src:url(https://hello.myfonts.net/count/3ada1c/adc66dc96a11b0d12c6e5073d4211280cd922ad1/821ad/webfonts/3ada1c_e_0.eot);src:url(https://hello.myfonts.net/count/3ada1c/adc66dc96a11b0d12c6e5073d4211280cd922ad1/821ad/webfonts/3ada1c_e_0.eot#iefix) format("embedded-opentype"),url(https://hello.myfonts.net/count/3ada1c/0948799b0545b336a00362dbbe3907a7df8b37c3/1f932/webfonts/3ada1c_e_0.woff2) format("woff2"),url(https://hello.myfonts.net/count/3ada1c/04cba55352edebf0be6035b9677dacaaaae76dd0/3ce3e/webfonts/3ada1c_e_0.woff) format("woff")
+}
+
+@font-face {
+	font-family:RozanovaHUM-Light;src:url(https://hello.myfonts.net/count/3ada1c/d10b5e90703a1e25602d8cfe90a31772a4ca76a8/6b0b7/webfonts/3ada1c_15_0.eot);src:url(https://hello.myfonts.net/count/3ada1c/d10b5e90703a1e25602d8cfe90a31772a4ca76a8/6b0b7/webfonts/3ada1c_15_0.eot#iefix) format("embedded-opentype"),url(https://hello.myfonts.net/count/3ada1c/70ce7f1c100b5856f3c67a0c588449daba7d09e6/70310/webfonts/3ada1c_15_0.woff2) format("woff2"),url(https://hello.myfonts.net/count/3ada1c/be4aea53adebb1446b477375e08bfe1d3abe779d/11e0b/webfonts/3ada1c_15_0.woff) format("woff")
+}
+
+@font-face {
+	font-family:RozanovaHUM-LightIt;src:url(https://hello.myfonts.net/count/3ada1c/26258a54d382e2d270b6d7814853cbaefe9b62f0/13c92/webfonts/3ada1c_16_0.eot);src:url(https://hello.myfonts.net/count/3ada1c/26258a54d382e2d270b6d7814853cbaefe9b62f0/13c92/webfonts/3ada1c_16_0.eot#iefix) format("embedded-opentype"),url(https://hello.myfonts.net/count/3ada1c/507817ffcd02a0f855da75cbe53b908b99097a36/347e1/webfonts/3ada1c_16_0.woff2) format("woff2"),url(https://hello.myfonts.net/count/3ada1c/bc7915ee1d8f3bf3519933b986ca126544c778c4/00b5d/webfonts/3ada1c_16_0.woff) format("woff")
+}
+
+@font-face {
+	font-family:RozanovaHUM-Bold;src:url(https://hello.myfonts.net/count/3ada1c/e271daf96dcfda4ca7618f917809d833b684e066/f60ba/webfonts/3ada1c_1b_0.eot);src:url(https://hello.myfonts.net/count/3ada1c/e271daf96dcfda4ca7618f917809d833b684e066/f60ba/webfonts/3ada1c_1b_0.eot#iefix) format("embedded-opentype"),url(https://hello.myfonts.net/count/3ada1c/cd38f2b6547f98f042f9e5e8a26e124a9260ba9b/c5eb2/webfonts/3ada1c_1b_0.woff2) format("woff2"),url(https://hello.myfonts.net/count/3ada1c/1374f1afd76346255745c60fd0a2920a186d954e/0bdd5/webfonts/3ada1c_1b_0.woff) format("woff")
+}
+
+html {
+	background: #004a55;
+	background: -moz-linear-gradient(107deg,#004a55 0,#00788a 50%,rgba(0,74,85,.7) 100%);
+	background: -webkit-linear-gradient(107deg,#004a55 0,#00788a 50%,rgba(0,74,85,.7) 100%);
+	background: linear-gradient(107deg,#004a55 0,#00788a 50%,rgba(0,74,85,.7) 100%);
+	background-size: 300% 300%;
+	animation: gradient 8s ease infinite
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	color: #004a55;
+	font-display: auto;
+	font-family: RozanovaHUM-Light;
+	font-size: 1.0em;
+	font-weight: 200;
+	height: 100%;
+	line-height: 2.0;
+	margin: 15px;
+	word-wrap: break-word
+}
+
+footer .foot {
+	background: #fff;
+	font-size: 1.0rem;
+	padding: 60px 10s;
+	line-height: 200%
+	text-align: center
+}
+
+main {
+	background-color: #fff;
+	min-height: 60vh;
+	padding: 2em 5%
+}
+
+hr {
+	border: none;
+	background-color: #6da43c;
+	width: 30%;
+	height: 3px
+}
+
+main a,main a:visited {
+	color: inherit;
+	font-weight: 500;
+	text-decoration-skip: auto;
+	-webkit-text-decoration-skip: auto
+}
+
+main a:focus,main a:hover,main a:visited:focus,main a:visited:hover {
+	color: #6da43c
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-display: auto;
+	font-family: RecoletaAlt-Regular;
+	font-weight: 500;
+	letter-spacing: normal;
+	word-spacing: normal;
+	word-wrap: break-word
+}
+
+h1 {
+	font-size: 1.5em;
+	font-weight: 700;
+	line-height: 1.2;
+	margin-bottom: 1em
+}
+
+article h1 {
+	margin-bottom: .5em
+}
+
+h2 {
+	font-size: 1em
+}
+
+h2 a {
+	border-bottom: 0
+}
+
+/******************* 一直找的小标题字体 ***************/
+.meta {
+	display: block;
+	font-family: RozanovaHUM-Bold;
+	line-height: 2.0em;
+	font-size: 1.5em
+}
+
+@media screen and (min-width:760px) {
+	.clips-group,.recent {
+		grid-column-gap: 3em;
+		grid-template-columns: 3fr 6fr 3fr
+	}
+}
+
+@media all and (min-width:680px) {
+
+	.Posts p {
+		margin-top: 0
+	}
+
+	li {
+		padding-left: 10px;
+		margin: 20px 0
+	}
+
+	article::after,header::after {
+		margin: 70px
+	}
+
+	h1 {
+		font-size: 2.5em
+	}
+
+	h2 {
+		font-size: 1.5em
+	}
+
+	h3,h4,h5,h6 {
+		font-size: 1.0em
+	}
+
+	blockquote {
+		font-size: 1.5em
+	}
+
+	blockquote p {
+		margin: 0
+	}
+
+	hr {
+		margin: 1em auto
+	}
+}
+
+h4 a {
+	border: 0
+}
+
+.clips-group,.recent {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-row-gap: 40px
+}
+
+.clips-group h1,.recent h1 {
+	font-size: 1.2em;
+	line-height: 1.4;
+	margin-top: 0
+}
+
+.clips-group h2,.recent h2 {
+	margin-top: 0;
+	margin-bottom: 20px
+}
+
+.clips-group a,.recent a {
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	border: 0
+}
+
+.clips-group__clip-column h4,.recent__clip-column h4 {
+	font-size: .9em;
+	line-height: 1.3
+}
+
+.clips-group__clip-column article,.recent__clip-column article {
+	margin-bottom: 40px
+}
+
+.clips-group .post-container,.recent .post-container {
+	margin-bottom: 80px
+}
+
+.clips-group .post-container h3,.recent .post-container h3 {
+	font-size: 2.0em;
+	line-height: 1.5;
+	margin: 0
+}
+
+.clips-group .post-container p,.recent .post-container p {
+	font-size: 88%;
+	font-weight: 400;
+	hyphens: 5;
+	line-height: 1.5;
+	margin: 0
+}
+
+
+
+
+
+
+

@@ -1,0 +1,333 @@
+   <!DOCTYPE html>
+   <link rel="stylesheet" href="../css/Edu_Exp.css">
+   <link rel="stylesheet" href="../css/header.css">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title>Gallery HarrySong</title>
+   
+   <!-- Header================================================== -->
+      <header id="home">
+         <nav id="nav-wrap" style="display: block; opacity: 0.570451;" class="opaque">
+	         <ul id="nav" class="nav">
+               <li class=""><a href="../index.html">Home</a></li>
+               <li class=""><a href="About.html">About</a></li>
+   	           <li class=""><a href="Education.html">Education</a></li>
+               <li class=""><a href="Achievement.html">Achievement</a></li>
+               <li class=""><a href="Interest.html">Interest</a></li>
+               <li class=""><a href="Gallery.html">Gallery</a></li>
+   			   <li class=""><a href="Favorite.html">Favorite Person</a></li>
+               <li class=""><a href="Contact.html">Contact</a></li>	   
+			   
+			<style>
+			.time{color: #000000;margin-top: 5rem;}
+			</style>
+			<div class="time">
+			<SCRIPT language=JavaScript>
+			tmpDate = new Date(); date = tmpDate.getDate();
+			month= tmpDate.getMonth() + 1 ;
+			document.write(date); document.write(" Date ");
+			document.write(month);	document.write(" Month ");
+			myArray=new Array(6);
+			myArray[0]="Sunday"
+			myArray[1]="Monday"
+			myArray[2]="Tuesday"
+			myArray[3]="Wednesday"
+			myArray[4]="Thursday"
+			myArray[5]="Friday"
+			myArray[6]="Saturday"
+			weekday=tmpDate.getDay();
+			if (weekday==0 | weekday==6)
+			{document.write(myArray[weekday])}
+			else
+			{document.write(myArray[weekday])}
+			</SCRIPT>
+			</div>
+			   
+            </ul> <!-- end #nav -->
+         </nav> <!-- end #nav-wrap -->
+       </header> <!-- Header End -->
+	   
+      <script type="text/javascript" src="../js/jquery.js"></script>
+	  <script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+      <script type="text/javascript" src="../js/jquery.superslide.2.1.1.js"></script>
+      <script type="text/javascript" src="../js/jquery.touchslider.js"></script>
+
+    <!--控制banner切换效果-->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".main_visual").hover(
+          function () {
+            $("#btn_prev,#btn_next").fadeIn();
+          },
+          function () {
+            $("#btn_prev,#btn_next").fadeOut();
+          }
+        );
+        $dragBln = false;
+        $(".main_image").touchSlider({
+          flexible: true,
+          speed: 200,
+          btn_prev: $("#btn_prev"),
+          btn_next: $("#btn_next"),
+          paging: $(".flicking_con a"),
+          counter: function (e) {
+            $(".flicking_con a")
+              .removeClass("on")
+              .eq(e.current - 1)
+              .addClass("on");
+          },
+        });
+        $(".main_image").bind("mousedown", function () {
+          $dragBln = false;
+        });
+        $(".main_image").bind("dragstart", function () {
+          $dragBln = true;
+        });
+        $(".main_image a").click(function () {
+          if ($dragBln) {
+            return false;
+          }
+        });
+        timer = setInterval(function () {
+          $("#btn_next").click();
+        }, 4000);
+        $(".main_visual").hover(
+          function () {
+            clearInterval(timer);
+          },
+          function () {
+            timer = setInterval(function () {
+              $("#btn_next").click();
+            }, 4000);
+          }
+        );
+        $(".main_image")
+          .bind("touchstart", function () {
+            clearInterval(timer);
+          })
+          .bind("touchend", function () {
+            timer = setInterval(function () {
+              $("#btn_next").click();
+            }, 4000);
+          });
+      });
+    </script>
+
+	<style type="text/css">
+	  .inline-block {
+	  display: inline-block;
+	  width: 85%;
+	  /* height: 85%; */
+	  
+	}
+	.wrop {
+	    word-wrap:break-word;  
+	    /* word-break:break-all;  */
+	    overflow: hidden; 
+	    margin-right: auto;
+	    margin-left: auto; 
+	    text-align: center;
+	}
+	      * {
+        padding: 0;
+        margin: 0;
+      }
+      .container {
+        width: 800px;
+        background: #f2fff6;
+        margin: 10px auto;
+      }
+      .item {
+        box-sizing: border-box; /*border计算在width中*/
+        -moz-box-sizing: border-box; /* Firefox */
+        -webkit-box-sizing: border-box; /* Safari */
+        width: 33.33%;
+        height: 30px;
+        /*border:1px solid black;*/
+        float: left;
+      }
+      .container:after {
+        display: block;
+        clear: both;
+        content: ".";
+        height: 0;
+        visibility: hidden;
+        display: block;
+      }
+.h84{ height:99px; overflow:hidden;}
+      /*首頁*/
+	  
+/*banner*/
+.main_image {width:100%; height:475px; overflow:hidden; margin:0 auto; position:relative;margin-top: 2.5em; }
+.main_image ul {width:9999px; height:475px; overflow:hidden; position:absolute; top:0; left:0}
+.main_image li {float:left; width:100%; height:475px;}
+.main_image li span {display:block; width:100%; height:475px;}
+.main_image li a {display:block; width:100%; height:475px;}
+div.flicking_con {width:990px; margin:0 auto; position:relative}
+div.flicking_con .flicking_inner{position:absolute; top:445px; left:50%; margin-left:-51px; z-index:190; height:24px} 
+div.flicking_con a {float:left; width:17px; height:17px; margin:0; padding:0; display:block; background:url(../img/galleryimg/dian.png) no-repeat; text-indent:-10000px;border-radius:50%; margin-left:8px; margin-right:8px;}
+div.flicking_con a.on {background:url(../img/galleryimg/dian2.png) no-repeat;}
+#btn_prev,#btn_next{z-index:180;position:absolute;display:block;width:50px!important;height:100px!important;top:40%;display:block;}
+#btn_prev{left:20%; background:url(../img/galleryimg/arrow_left.png) no-repeat left center; width:50px; height:100px;}
+#btn_next{right:20%; background:url(../img/galleryimg/arrow_right.png) no-repeat left center; width:50px; height:100px;}
+
+   </style>
+   <!-- Resume Section
+   ================================================== -->
+   <section style="width: 100%;height: auto;">
+
+    <!--banner star-->
+    <div class="main_visual">
+      <div class="flicking_con">
+        <div class="flicking_inner">
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+		  <a href="#">4</a>
+		  <a href="#">5</a>
+        </div>
+      </div>
+      <!--flicking_con end-->
+      
+      <div class="main_image">
+        <ul>
+			
+          <li>
+            <span
+              style="background: url(../img/primary.jpg) no-repeat center top"
+              ><a href="#"></a
+            ></span>
+          </li>
+		  
+          <li>
+            <span
+              style="background: url(../img/junior.jpg) no-repeat center top;"
+              ><a href="#"></a
+            ></span>
+          </li>
+		  
+          <li>
+            <span
+              style="background: url(../img/senior.jpg) no-repeat center top;"
+              ><a href="#"></a
+            ></span>
+          </li>
+		  
+          <li>
+            <span
+              style="background: url(../img/now.jpg) no-repeat center top;"
+              ><a href="#"></a
+            ></span>
+          </li>
+		  
+          <li>
+            <span
+              style="background: url(../img/speaking.jpg) no-repeat center top;"
+              ><a href="#"></a
+            ></span>
+          </li>
+
+        </ul>
+        <a href="#" id="btn_prev"></a>
+        <a href="#" id="btn_next"></a>
+      </div>
+    
+      <!--main_image end-->
+	  
+    <!--banner end-->
+    <div style="width: 80%;height: auto;margin-top: 30px;text-align: center;margin-left: auto;margin-right: auto;">
+      <div class="inline-block" style="margin-left: 0px;">
+        <img class="pimg" src="../img/speaking.jpg" style="width: 300px;height: 300px; text-align: center;margin-left: 20px;margin-right: 20px;">
+        <p class="wrop" style="width: 400px; height: 200px; text-align: left;float: right;margin-top: 60px;font-size: 1.35em;">The photo is clickable.</br></br>The photo with former principal Ms.Helen.</br> I represented the freshman of FedUni</br>and made a speech.</p>
+      </div>
+	  <div class="inline-block" style="margin-right: 0px;margin-top: auto;margin-bottom: auto;">
+      </div>
+    </div>
+	
+	<!--banner end-->
+	
+	<div style="width: 80%;height: auto;margin-top: 30px;text-align: center;margin-left: auto;margin-right: auto;">
+	  <div class="inline-block" style="margin-left: 0px;">
+	    <img class="pimg" src="../img/changsha.jpg" style="width: 300px;height: 510px; text-align: center;margin-left: 20px;">
+	    <p class="wrop" style="width: 400px;height: 200px; text-align: left;float: right;margin-top: 150px;margin-left: 20px;font-size: 1.25em;">The photo is clickable.</br></br>I took this photo when I vistied Changsha,</br>Hunan Province.</br> The combination of the panorama and aperture make it fantastic!</p>
+	  </div>
+	
+
+   <!-- Footer -->
+   </main>
+   <footer>
+     <div class=".foot">
+       <p class="copy">Copyright © 2021 HarrySong</br> All Rights Reserved</br>HEBUST-FedUni </br>Nov 2021</p><img src="../img/Seal.png">
+     </div>
+        <h2>Follow Me</h2>
+        <ul>
+        <li><a href="https://github.com/Harry-SJH" target="_blank">   <img src="../img/github.png"></a></li>
+      <li><a href="https://www.instagram.com/harry.sjh/" target="_blank">   <img src="../img/ins.png"></a></li>
+      <li><a href="mailto:st839507591@gmail.com" target="_blank">      <img src="../img/gmail.png"></a></li>
+      <li><a href="https://space.bilibili.com/479904489" target="_blank">    <img src="../img/bilibili.png"></a></li>
+        </ul>
+		<div id="go-top"><a title="Back to Top" href="Gallery.html"><img src="../img/up.ico"></i></a></div>
+   </footer>
+   
+   
+   </section>
+        <div id="outerdiv" style="position:fixed;top:0;left:0;background:rgba(0,0,0,0.7);z-index:2;width:100%;height:100%;display:none;">
+        <div id="innerdiv" style="position:absolute;">
+        <img id="bigimg" style="border:5px solid #fff;" src=""/>
+        </div>
+        </div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-29744509-1', 'auto');
+  ga('send', 'pageview');
+//pic popup
+$(function(){  
+        $(".pimg").click(function(){  
+            var _this = $(this);//将当前的pimg元素作为_this传入函数  
+            imgShow("#outerdiv", "#innerdiv", "#bigimg", _this);  
+        });  
+});  
+
+    function imgShow(outerdiv, innerdiv, bigimg, _this){  
+        var src = _this.attr("src");//获取当前点击的pimg元素中的src属性  
+        $(bigimg).attr("src", src);//设置#bigimg元素的src属性  
+      
+            /*获取当前点击图片的真实大小，并显示弹出层及大图*/  
+        $("<img/>").attr("src", src).load(function(){  
+            var windowW = $(window).width();//获取当前窗口宽度  
+            var windowH = $(window).height();//获取当前窗口高度  
+            var realWidth = this.width;//获取图片真实宽度  
+            var realHeight = this.height;//获取图片真实高度  
+            var imgWidth, imgHeight;  
+            var scale = 0.8;//缩放尺寸，当图片真实宽度和高度大于窗口宽度和高度时进行缩放  
+              
+            if(realHeight>windowH*scale) {//判断图片高度  
+                imgHeight = windowH*scale;//如大于窗口高度，图片高度进行缩放  
+                imgWidth = imgHeight/realHeight*realWidth;//等比例缩放宽度  
+                if(imgWidth>windowW*scale) {//如宽度扔大于窗口宽度  
+                    imgWidth = windowW*scale;//再对宽度进行缩放  
+                }  
+            } else if(realWidth>windowW*scale) {//如图片高度合适，判断图片宽度  
+                imgWidth = windowW*scale;//如大于窗口宽度，图片宽度进行缩放  
+                            imgHeight = imgWidth/realWidth*realHeight;//等比例缩放高度  
+            } else {//如果图片真实高度和宽度都符合要求，高宽不变  
+                imgWidth = realWidth;  
+                imgHeight = realHeight;  
+            }  
+                    $(bigimg).css("width",imgWidth);//以最终的宽度对图片缩放  
+              
+            var w = (windowW-imgWidth)/2;//计算图片与窗口左边距  
+            var h = (windowH-imgHeight)/2;//计算图片与窗口上边距  
+            $(innerdiv).css({"top":h, "left":w});//设置#innerdiv的top和left属性  
+            $(outerdiv).fadeIn("fast");//淡入显示#outerdiv及.pimg  
+        });  
+          
+        $(outerdiv).click(function(){//再次点击淡出消失弹出层  
+            $(this).fadeOut("fast");  
+        });  
+    }
+
+</script>

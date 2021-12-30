@@ -1,0 +1,97 @@
+   <!DOCTYPE html>
+   <link rel="stylesheet" href="../css/Contact.css">
+   <link rel="stylesheet" href="../css/header.css">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <script type="text/javascript" src="../js/Validation.js"></script>
+   <title>Contact HarrySong</title>
+   
+   <body background="../img/background.jpg" style=" background-repeat:no-repeat ;
+   background-size:100% 100%; background-attachment: fixed;">
+
+   <!-- Header================================================== -->
+      <header id="home" style="height:0px;">
+         <nav id="nav-wrap" style="display: block; opacity: 0.570451;" class="opaque">
+			 <div class="logo">
+			 	<a href="index.html">
+			 	<img src="../img/Seal.png" alt=""></a>
+			 </div>
+	         <ul id="nav" class="nav">
+               <li class=""><a href="../index.html">Home</a></li>
+               <li class=""><a href="About.html">About</a></li>
+   	           <li class=""><a href="Education.html">Education</a></li>
+               <li class=""><a href="Achievement.html">Achievement</a></li>
+               <li class=""><a href="Interest.html">Interest</a></li>
+               <li class=""><a href="Gallery.html">Gallery</a></li>
+   			   <li class=""><a href="Favorite.html">Favorite Person</a></li>
+               <li class=""><a href="Contact.html">Contact</a></li>
+	         </ul> <!-- end #nav -->
+			
+			<style>
+			.time{color: #fff;margin-top: 5rem;}
+			</style>
+			<div class="time">
+			<SCRIPT language=JavaScript>
+			tmpDate = new Date(); date = tmpDate.getDate();
+			month= tmpDate.getMonth() + 1 ;
+			document.write(date); document.write(" Date ");
+			document.write(month);	document.write(" Month ");
+			myArray=new Array(6);
+			myArray[0]="Sunday"
+			myArray[1]="Monday"
+			myArray[2]="Tuesday"
+			myArray[3]="Wednesday"
+			myArray[4]="Thursday"
+			myArray[5]="Friday"
+			myArray[6]="Saturday"
+			weekday=tmpDate.getDay();
+			if (weekday==0 | weekday==6)
+			{document.write(myArray[weekday])}
+			else
+			{document.write(myArray[weekday])}
+			</SCRIPT>
+			</div>
+			
+         </nav> <!-- end #nav-wrap -->
+      </header> <!-- Header End -->
+	  
+	<body>
+	<main>
+		<div class="contact">	
+			<div id=""></div>
+			<div class="main">
+				<div class="info">
+					<div class="t">
+						<p>I'd Love To Connect With You</br> </br>Let me get to know more about you</p>
+					</div>
+					<div class="lxfs">
+						<ul>
+							<li>Name: Jionghao Song / HarrySong</li>
+							<li>E-mail：30393068@students.federation.edu.au</li>
+							<li>Mobile: +86 18830661751</li>
+							<li>Department：HEBUST-FedUni</li>
+							<li>Github: https://github.com/Harry-SJH</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="contact">	
+			<div id="public"><p></p></div>
+			<div class="main">				
+				<div class="form">
+					<form action="" name="msg" onsubmit="return checkMsg()">
+						<div class="input"><input type="text" name="firstname" placeholder="First Name" autocomplete="off" pattern="^[a-zA-Z_][a-zA-Z0-9_]{1,16}$" required="" oninvalid="setCustomValidity('Please input the right first name');" oninput="setCustomValidity('');"></div>
+						<div class="input"><input type="text" name="lastname" placeholder="Last Name" autocomplete="off" pattern="^[a-zA-Z_][a-zA-Z0-9_]{1,16}$" required="" oninvalid="setCustomValidity('Please input the right first name');" oninput="setCustomValidity('');"></div>
+						<div class="input"><input type="text" name="email" placeholder="E-mail" autocomplete="off" pattern="^(\w+((-\w+)|(@[A-Za-z0-9]" required="" oninvalid="setCustomValidity('Please input the right email');" oninput="setCustomValidity('');"></div>
+						<div class="input"><input type="text" name="phone" placeholder="Phone Nov." autocomplete="off" pattern="^1[3|5|7|8][0-9]{9}$" required="" oninvalid="setCustomValidity('Please input the right phone number');" oninput="setCustomValidity('');"></div>
+						<div class="input"> <textarea name="message" placeholder="Your words are my motivation "></textarea> </div>
+						<div class="button"><input type="submit" value="Submit"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+				
+	</main>
+	</body>
+	

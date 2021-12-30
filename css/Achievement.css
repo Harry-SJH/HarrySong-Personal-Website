@@ -1,0 +1,8 @@
+
+.achievement .list ul{display: flex; justify-content: space-between;padding:3em; margin-bottom: 2.0em;font-size:1.15em;list-style: none;}
+.achievement .list ul li{width: 500px;}
+.achievement .list ul li h2{ padding: 30px 0; }
+.achievement .list ul li p{line-height: 1.8;}
+.achievement .list ul li a{display: block; width: 160px; height: 45px; line-height: 45px; text-align: center; background: #5f2f8f; color: #fff; border-radius: 45px; margin-top: 25px;}
+.achievement .list ul li a:hover{box-shadow: 0 0 8px rgba(0,0,0,0.5);}
+
